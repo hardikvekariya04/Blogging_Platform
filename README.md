@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # Blogging_Platform
-=======
+
 # Blog API With JWT Authentication Using Django Rest Framework
 
 # To Run this Project follow below:
@@ -37,5 +36,3 @@ Blog Post Management:
 
 Comment Management:
     Create, retrieve, update, and delete comments on posts.
-
->>>>>>> a7d91f1 (File uplaod)
