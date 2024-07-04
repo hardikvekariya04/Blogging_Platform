@@ -1,0 +1,1722 @@
+{
+	"info": {
+		"_postman_id": "de98db80-91f2-45bd-95d4-3fe88a6faa16",
+		"name": "Blogging_platform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36291668"
+	},
+	"item": [
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"juhil\",\r\n    \"email\" : \"juhil@gmail.com\",\r\n    \"password\" : \"juhil\",\r\n    \"password2\" : \"juhil\"\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/register/?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"register",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"juhil\",\r\n    \"email\" : \"juhil@gmail.com\",\r\n    \"password\" : \"juhil\",\r\n    \"password2\" : \"juhil\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/register/?",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"register",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 12:36:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Registration Successful\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"juhil\",\r\n    \"password\" : \"juhil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"juhil\",\r\n    \"password\" : \"juhil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 12:39:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "521"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": {\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyMDA5Njc1OSwiaWF0IjoxNzIwMDEwMzU5LCJqdGkiOiI4MTJlZmFlNzI1ODQ0Y2FiYWI0YzcwYmUyNjEyNDMzNyIsInVzZXJfaWQiOjd9.hzFTwSS2eR8MvaKs-h3SqBsMjc3vOhnjWlgTp393jKc\",\n        \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEwOTU5LCJpYXQiOjE3MjAwMTAzNTksImp0aSI6IjdlMTlmMWJiOGRiYTRkMThiZjI2ZDAzNjIxNGQxNjc0IiwidXNlcl9pZCI6N30.eEhkkMWPT3MGH-J7ZGD0lDyx11wy_-JHgJHdHmJN1fg\"\n    },\n    \"msg\": \"Login Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEwODgwLCJpYXQiOjE3MjAwMTAyODAsImp0aSI6IjVkMDNkZWVjZTQ1YTRlMGFhN2FkN2Y3ODVhODJjZjgzIiwidXNlcl9pZCI6N30.TCEj4sfZhC9W6yyKcgUct6YGC1ppQypZpP8x8D2HQc0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Profile",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEwODgwLCJpYXQiOjE3MjAwMTAyODAsImp0aSI6IjVkMDNkZWVjZTQ1YTRlMGFhN2FkN2Y3ODVhODJjZjgzIiwidXNlcl9pZCI6N30.TCEj4sfZhC9W6yyKcgUct6YGC1ppQypZpP8x8D2HQc0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/profile/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"profile",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 12:39:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"name\": \"juhil\",\n    \"email\": \"juhil@gmail.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User Password Reset",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEwODgwLCJpYXQiOjE3MjAwMTAyODAsImp0aSI6IjVkMDNkZWVjZTQ1YTRlMGFhN2FkN2Y3ODVhODJjZjgzIiwidXNlcl9pZCI6N30.TCEj4sfZhC9W6yyKcgUct6YGC1ppQypZpP8x8D2HQc0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"password\" : \"juhil0409\",\r\n    \"password2\" : \"juhil0409\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/changepassword/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"changepassword",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Password Reset",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEwODgwLCJpYXQiOjE3MjAwMTAyODAsImp0aSI6IjVkMDNkZWVjZTQ1YTRlMGFhN2FkN2Y3ODVhODJjZjgzIiwidXNlcl9pZCI6N30.TCEj4sfZhC9W6yyKcgUct6YGC1ppQypZpP8x8D2HQc0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"password\" : \"juhil0409\",\r\n    \"password2\" : \"juhil0409\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/changepassword/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"changepassword",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 12:41:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Password Changed Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEwODgwLCJpYXQiOjE3MjAwMTAyODAsImp0aSI6IjVkMDNkZWVjZTQ1YTRlMGFhN2FkN2Y3ODVhODJjZjgzIiwidXNlcl9pZCI6N30.TCEj4sfZhC9W6yyKcgUct6YGC1ppQypZpP8x8D2HQc0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refresh_token\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyMDA5Njc1OSwiaWF0IjoxNzIwMDEwMzU5LCJqdGkiOiI4MTJlZmFlNzI1ODQ0Y2FiYWI0YzcwYmUyNjEyNDMzNyIsInVzZXJfaWQiOjd9.hzFTwSS2eR8MvaKs-h3SqBsMjc3vOhnjWlgTp393jKc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/logout/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"logout",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Logout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEwODgwLCJpYXQiOjE3MjAwMTAyODAsImp0aSI6IjVkMDNkZWVjZTQ1YTRlMGFhN2FkN2Y3ODVhODJjZjgzIiwidXNlcl9pZCI6N30.TCEj4sfZhC9W6yyKcgUct6YGC1ppQypZpP8x8D2HQc0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"refresh_token\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyMDA5Njc1OSwiaWF0IjoxNzIwMDEwMzU5LCJqdGkiOiI4MTJlZmFlNzI1ODQ0Y2FiYWI0YzcwYmUyNjEyNDMzNyIsInVzZXJfaWQiOjd9.hzFTwSS2eR8MvaKs-h3SqBsMjc3vOhnjWlgTp393jKc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/logout/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"logout",
+								""
+							]
+						}
+					},
+					"status": "Reset Content",
+					"code": 205,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 12:42:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Logout successful.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Blog Creation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDExNzcwLCJpYXQiOjE3MjAwMTExNzAsImp0aSI6IjZkZDU0OTAwNjhhZjQxYjc5MDdkM2YxMDZhNjViZjQzIiwidXNlcl9pZCI6N30._QxAx5xVmEYYUPKu9fPeO8qSpZ9AYpAPDLHof6EjlKc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Technology and startup news",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef393be-f6d8-4300-b47f-a5fc3b24f584"
+						},
+						{
+							"key": "description",
+							"value": "TechCrunch is a blog that provides technology and startup news, from the latest developments in Silicon Valley to venture capital funding.The blog’s target audience is technology and business enthusiasts, especially startup founders and investors worldwide.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/post/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"post",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Blog Creation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDExNzcwLCJpYXQiOjE3MjAwMTExNzAsImp0aSI6IjZkZDU0OTAwNjhhZjQxYjc5MDdkM2YxMDZhNjViZjQzIiwidXNlcl9pZCI6N30._QxAx5xVmEYYUPKu9fPeO8qSpZ9AYpAPDLHof6EjlKc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Technology and startup news",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1ef393be-f6d8-4300-b47f-a5fc3b24f584"
+								},
+								{
+									"key": "description",
+									"value": "TechCrunch is a blog that provides technology and startup news, from the latest developments in Silicon Valley to venture capital funding.The blog’s target audience is technology and business enthusiasts, especially startup founders and investors worldwide.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/post/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"post",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 12:59:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "519"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post added successfully\",\n    \"data\": {\n        \"id\": 13,\n        \"title\": \"Technology and startup news\",\n        \"image\": \"http://127.0.0.1:8000/image/image/tech.webp\",\n        \"description\": \"TechCrunch is a blog that provides technology and startup news, from the latest developments in Silicon Valley to venture capital funding.The blog’s target audience is technology and business enthusiasts, especially startup founders and investors worldwide.\",\n        \"created_at\": \"2024-07-03T12:59:08.590842Z\",\n        \"updated_at\": \"2024-07-03T12:59:08.590842Z\",\n        \"author\": 7\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Blog Deletion",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDExOTY0LCJpYXQiOjE3MjAwMTEzNjQsImp0aSI6ImRlZDZjMDJjNGQ5NDQ5ZThhMTQ5NjhkODVhM2JlMTU1IiwidXNlcl9pZCI6N30.cX6jDqr5YVgrmP_1P7u-8e8OYVgGHDeQLysLTdbzNyQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/post/12/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"post",
+						"12",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Blog Deletion",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDExOTY0LCJpYXQiOjE3MjAwMTEzNjQsImp0aSI6ImRlZDZjMDJjNGQ5NDQ5ZThhMTQ5NjhkODVhM2JlMTU1IiwidXNlcl9pZCI6N30.cX6jDqr5YVgrmP_1P7u-8e8OYVgGHDeQLysLTdbzNyQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/post/12/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"post",
+								"12",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 12:56:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Blog Read",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEyMjI2LCJpYXQiOjE3MjAwMTE2MjYsImp0aSI6ImRiN2RjNWY4YjFhMTQzODhiZDdlODVhZGVmYWY1OWFkIiwidXNlcl9pZCI6N30.iflY67Uwrgh1jbO7LZoKu_FfONdHYuhpu_kP-Mr2SkA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/post/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"post",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Blog Read",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEyMjI2LCJpYXQiOjE3MjAwMTE2MjYsImp0aSI6ImRiN2RjNWY4YjFhMTQzODhiZDdlODVhZGVmYWY1OWFkIiwidXNlcl9pZCI6N30.iflY67Uwrgh1jbO7LZoKu_FfONdHYuhpu_kP-Mr2SkA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/post/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"post",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 13:00:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4877"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 13,\n        \"title\": \"Technology and startup news\",\n        \"image\": \"/image/image/tech.webp\",\n        \"description\": \"TechCrunch is a blog that provides technology and startup news, from the latest developments in Silicon Valley to venture capital funding.The blog’s target audience is technology and business enthusiasts, especially startup founders and investors worldwide.\",\n        \"created_at\": \"2024-07-03T12:59:08.590842Z\",\n        \"updated_at\": \"2024-07-03T12:59:08.590842Z\",\n        \"author\": 7\n    },\n    {\n        \"id\": 11,\n        \"title\": \"demo4\",\n        \"image\": \"/image/image/shoes_wy010rA.jpg\",\n        \"description\": \"Part of the Apple user community, 9to5Mac is a blog covering news and reviews of Apple products.The website was originally created as a hobby blog covering news on Macs. Since then, 9to5Mac has become a blog covering all Apple products and is now part of the 9to5 blog network, which includes other sites such as 9to5Google and 9to5Toys.\",\n        \"created_at\": \"2024-07-03T11:26:06.767498Z\",\n        \"updated_at\": \"2024-07-03T11:26:06.767498Z\",\n        \"author\": 6\n    },\n    {\n        \"id\": 10,\n        \"title\": \"demo\",\n        \"image\": \"/image/image/shoes_qjcFTEg.jpg\",\n        \"description\": \"Part of the Apple user community, 9to5Mac is a blog covering news and reviews of Apple products.The website was originally created as a hobby blog covering news on Macs. Since then, 9to5Mac has become a blog covering all Apple products and is now part of the 9to5 blog network, which includes other sites such as 9to5Google and 9to5Toys.\",\n        \"created_at\": \"2024-07-03T11:12:10.375097Z\",\n        \"updated_at\": \"2024-07-03T11:12:10.375097Z\",\n        \"author\": 6\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Demo\",\n        \"image\": \"/image/image/shoes_Zn80zxX.jpg\",\n        \"description\": \"<p>Part of the Apple user community, 9to5Mac is a blog covering news and reviews of Apple products.The website was originally created as a hobby blog covering news on Macs. Since then, 9to5Mac has become a blog covering all Apple products and is now part of the 9to5 blog network, which includes other sites such as 9to5Google and 9to5Toys.</p>\",\n        \"created_at\": \"2024-07-03T11:10:40.256188Z\",\n        \"updated_at\": \"2024-07-03T11:11:19.905528Z\",\n        \"author\": 6\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Apple products\",\n        \"image\": \"/image/image/shoes_puaCyQ9.jpg\",\n        \"description\": \"Part of the Apple user community, 9to5Mac is a blog covering news and reviews of Apple products.The website was originally created as a hobby blog covering news on Macs. Since then, 9to5Mac has become a blog covering all Apple products and is now part of the 9to5 blog network, which includes other sites such as 9to5Google and 9to5Toys.\",\n        \"created_at\": \"2024-07-03T10:40:08.742696Z\",\n        \"updated_at\": \"2024-07-03T10:40:08.742696Z\",\n        \"author\": 6\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Apple products\",\n        \"image\": \"/image/image/shoes_MBQrtWT.jpg\",\n        \"description\": \"Part of the Apple user community, 9to5Mac is a blog covering news and reviews of Apple products.The website was originally created as a hobby blog covering news on Macs. Since then, 9to5Mac has become a blog covering all Apple products and is now part of the 9to5 blog network, which includes other sites such as 9to5Google and 9to5Toys.\",\n        \"created_at\": \"2024-07-03T09:55:14.510206Z\",\n        \"updated_at\": \"2024-07-03T09:55:14.510206Z\",\n        \"author\": 4\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Apple products\",\n        \"image\": \"/image/image/shoes_YrLew7t.jpg\",\n        \"description\": \"<h2 style=\\\"font-style:italic\\\">oky</h2>\",\n        \"created_at\": \"2024-07-03T07:40:24.582194Z\",\n        \"updated_at\": \"2024-07-03T08:56:47.868372Z\",\n        \"author\": 4\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Apple products\",\n        \"image\": \"/image/image/shoes_7Nxw5Ls.jpg\",\n        \"description\": \"<p>Part of the Apple user community, 9to5Mac is a blog covering news and reviews of Apple products.The website was originally created as a hobby blog covering news on Macs. Since then, 9to5Mac has become a blog covering all Apple products and is now part of the 9to5 blog network, which includes other sites such as 9to5Google and 9to5Toys.</p>\",\n        \"created_at\": \"2024-07-03T07:40:02.326644Z\",\n        \"updated_at\": \"2024-07-03T08:56:47.903137Z\",\n        \"author\": 4\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Apple products\",\n        \"image\": \"/image/image/shoes.jpg\",\n        \"description\": \"<p>Part of the Apple user community, 9to5Mac is a blog covering news and reviews of Apple products.The website was originally created as a hobby blog covering news on Macs. Since then, 9to5Mac has become a blog covering all Apple products and is now part of the 9to5 blog network, which includes other sites such as 9to5Google and 9to5Toys.</p>\",\n        \"created_at\": \"2024-07-03T04:12:27.040226Z\",\n        \"updated_at\": \"2024-07-03T08:56:47.908422Z\",\n        \"author\": 4\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Apple products\",\n        \"image\": \"/image/image/shoes.jpg\",\n        \"description\": \"<p>Part of the Apple user community, 9to5Mac is a blog covering news and reviews of Apple products.The website was originally created as a hobby blog covering news on Macs. Since then, 9to5Mac has become a blog covering all Apple products and is now part of the 9to5 blog network, which includes other sites such as 9to5Google and 9to5Toys.</p>\",\n        \"created_at\": \"2024-07-03T04:06:11.585438Z\",\n        \"updated_at\": \"2024-07-03T08:56:47.913636Z\",\n        \"author\": 4\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Blog Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEyMjI2LCJpYXQiOjE3MjAwMTE2MjYsImp0aSI6ImRiN2RjNWY4YjFhMTQzODhiZDdlODVhZGVmYWY1OWFkIiwidXNlcl9pZCI6N30.iflY67Uwrgh1jbO7LZoKu_FfONdHYuhpu_kP-Mr2SkA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Technology and startup updated news",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "TechCrunch is a blog that provides technology and startup news, from the latest developments in Silicon Valley to venture capital funding.\n\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/post/13/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"post",
+						"13",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Blog Update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEyMjI2LCJpYXQiOjE3MjAwMTE2MjYsImp0aSI6ImRiN2RjNWY4YjFhMTQzODhiZDdlODVhZGVmYWY1OWFkIiwidXNlcl9pZCI6N30.iflY67Uwrgh1jbO7LZoKu_FfONdHYuhpu_kP-Mr2SkA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Technology and startup updated news",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "TechCrunch is a blog that provides technology and startup news, from the latest developments in Silicon Valley to venture capital funding.\n\n",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/post/13/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"post",
+								"13",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 13:07:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "408"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post updated successfully\",\n    \"data\": {\n        \"id\": 13,\n        \"title\": \"Technology and startup updated news\",\n        \"image\": \"http://127.0.0.1:8000/image/image/tech.webp\",\n        \"description\": \"TechCrunch is a blog that provides technology and startup news, from the latest developments in Silicon Valley to venture capital funding.\",\n        \"created_at\": \"2024-07-03T12:59:08.590842Z\",\n        \"updated_at\": \"2024-07-03T13:07:47.159568Z\",\n        \"author\": 7\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Comment Creation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEyNzU2LCJpYXQiOjE3MjAwMTIxNTYsImp0aSI6IjBkMmJhMTU2ODk2MjQ1MzY4NDAwNGQ1ZGVlMmMwMjI2IiwidXNlcl9pZCI6N30.gp-uOS7wmEmD9U0nR9DOzKpMs9ZtKlXi4iaxBufMhZU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"comment\" : \"Excellent bloggggg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/post/13/comment/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"post",
+						"13",
+						"comment",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Comment Creation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEyNzU2LCJpYXQiOjE3MjAwMTIxNTYsImp0aSI6IjBkMmJhMTU2ODk2MjQ1MzY4NDAwNGQ1ZGVlMmMwMjI2IiwidXNlcl9pZCI6N30.gp-uOS7wmEmD9U0nR9DOzKpMs9ZtKlXi4iaxBufMhZU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\" : \"Excellent bloggggg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/post/13/comment/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"post",
+								"13",
+								"comment",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 13:12:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "82"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Comment created successfully\",\n    \"data\": {\n        \"comment\": \"Excellent bloggggg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Comment Read",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEyNzU2LCJpYXQiOjE3MjAwMTIxNTYsImp0aSI6IjBkMmJhMTU2ODk2MjQ1MzY4NDAwNGQ1ZGVlMmMwMjI2IiwidXNlcl9pZCI6N30.gp-uOS7wmEmD9U0nR9DOzKpMs9ZtKlXi4iaxBufMhZU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/post/comment/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"post",
+						"comment",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Comment Read",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEyNzU2LCJpYXQiOjE3MjAwMTIxNTYsImp0aSI6IjBkMmJhMTU2ODk2MjQ1MzY4NDAwNGQ1ZGVlMmMwMjI2IiwidXNlcl9pZCI6N30.gp-uOS7wmEmD9U0nR9DOzKpMs9ZtKlXi4iaxBufMhZU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/post/comment/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"post",
+								"comment",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 13:13:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1109"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 9,\n        \"comment\": \"Excellent bloggggg\",\n        \"created_at\": \"2024-07-03T13:12:40.279294Z\",\n        \"updated_at\": \"2024-07-03T13:12:40.279294Z\",\n        \"post\": 13,\n        \"author\": 7\n    },\n    {\n        \"id\": 8,\n        \"comment\": \"Mind blowing\",\n        \"created_at\": \"2024-07-03T10:41:03.614719Z\",\n        \"updated_at\": \"2024-07-03T10:41:03.614719Z\",\n        \"post\": 7,\n        \"author\": 6\n    },\n    {\n        \"id\": 7,\n        \"comment\": \"Mind blowing\",\n        \"created_at\": \"2024-07-03T10:36:22.090892Z\",\n        \"updated_at\": \"2024-07-03T10:36:22.090892Z\",\n        \"post\": 5,\n        \"author\": 5\n    },\n    {\n        \"id\": 6,\n        \"comment\": \"Mind blowing\",\n        \"created_at\": \"2024-07-03T10:29:04.931106Z\",\n        \"updated_at\": \"2024-07-03T10:29:04.931106Z\",\n        \"post\": 5,\n        \"author\": 5\n    },\n    {\n        \"id\": 5,\n        \"comment\": \"Mind blowing\",\n        \"created_at\": \"2024-07-03T10:27:57.246477Z\",\n        \"updated_at\": \"2024-07-03T10:27:57.246477Z\",\n        \"post\": 5,\n        \"author\": 5\n    },\n    {\n        \"id\": 3,\n        \"comment\": \"Excellent\",\n        \"created_at\": \"2024-07-03T09:38:05.095762Z\",\n        \"updated_at\": \"2024-07-03T09:38:05.095762Z\",\n        \"post\": 4,\n        \"author\": 4\n    },\n    {\n        \"id\": 2,\n        \"comment\": \"Good\",\n        \"created_at\": \"2024-07-03T09:37:56.822241Z\",\n        \"updated_at\": \"2024-07-03T09:37:56.822241Z\",\n        \"post\": 4,\n        \"author\": 4\n    },\n    {\n        \"id\": 1,\n        \"comment\": \"ohhh\",\n        \"created_at\": \"2024-07-03T09:37:33.153574Z\",\n        \"updated_at\": \"2024-07-03T09:37:33.153654Z\",\n        \"post\": 3,\n        \"author\": 4\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Comment Updation",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEzMjYzLCJpYXQiOjE3MjAwMTI2NjMsImp0aSI6ImI3YTQzODA1ZDZkZDQ0Njk4ZTg5M2RkNDk5MWI0OGM1IiwidXNlcl9pZCI6N30.FpYfR9eCIcaQATFI2CmD3jMTrXX6d8sj8eUtEMFsbuk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"comment\" : \"Gooddddddd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/post/13/comment/9/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"post",
+						"13",
+						"comment",
+						"9",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Comment Updation",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEzMjYzLCJpYXQiOjE3MjAwMTI2NjMsImp0aSI6ImI3YTQzODA1ZDZkZDQ0Njk4ZTg5M2RkNDk5MWI0OGM1IiwidXNlcl9pZCI6N30.FpYfR9eCIcaQATFI2CmD3jMTrXX6d8sj8eUtEMFsbuk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\" : \"Gooddddddd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/post/13/comment/9/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"post",
+								"13",
+								"comment",
+								"9",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 13:18:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Comment updated successfully\",\n    \"data\": {\n        \"comment\": \"Gooddddddd\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Comment Deletion",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEzMjYzLCJpYXQiOjE3MjAwMTI2NjMsImp0aSI6ImI3YTQzODA1ZDZkZDQ0Njk4ZTg5M2RkNDk5MWI0OGM1IiwidXNlcl9pZCI6N30.FpYfR9eCIcaQATFI2CmD3jMTrXX6d8sj8eUtEMFsbuk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/post/13/comment/9/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"post",
+						"13",
+						"comment",
+						"9",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Comment Deletion",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwMDEzMjYzLCJpYXQiOjE3MjAwMTI2NjMsImp0aSI6ImI3YTQzODA1ZDZkZDQ0Njk4ZTg5M2RkNDk5MWI0OGM1IiwidXNlcl9pZCI6N30.FpYfR9eCIcaQATFI2CmD3jMTrXX6d8sj8eUtEMFsbuk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/post/13/comment/9/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"post",
+								"13",
+								"comment",
+								"9",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2024 13:19:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Comment deleted successfully\"\n}"
+				}
+			]
+		}
+	]
+}
